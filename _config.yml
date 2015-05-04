@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            Site Title
+title:            Philip Bradley
 locale:           en_US
 url:              
 
@@ -26,13 +26,13 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
+  name: Philip Bradley
   avatar: bio-photo.jpg
-  bio: "Describe your self."
-  email: 
+  bio: "not much to say "
+  email: "pdbradley@gmail.com"
   disqus-shortname: 
-  twitter: #username
-  facebook: #username
+  twitter: brophil
+  facebook: pdbradley
   google:
     plus: #username
     analytics: 
