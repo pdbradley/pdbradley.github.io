@@ -1,25 +1,15 @@
 ---
 layout: post
-title: Just playing around
-excerpt: "Just playing around"
-modified: 2014-05-04
-tags: [just,afew,meaningless,tags]
+title: Playin around
+excerpt: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
+modified: 2013-05-04
+tags: [just,a,few,silly,tags]
 comments: true
 image:
   feature: sample-image-5.jpg
   credit: WeGraphics
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
-
-<section id="table-of-contents" class="toc">
-  <header>
-    <h3>Overview</h3>
-  </header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section><!-- /#table-of-contents -->
 
 ## HTML Elements
 
