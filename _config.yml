@@ -27,22 +27,22 @@ kramdown:
 # Site owner
 owner:
   name: Philip Bradley
-  avatar: bio-photo.jpg
-  bio: "Just some dude."
+  avatar: avatar1.png
+  bio: "Just some guy with glasses."
   email: "pdbradley@gmail.com"
   disqus-shortname: pdbradley
   twitter: brophil
   facebook: pdbradley
   google:
-    plus: #username
+    plus: pdbradley
     analytics: 
     verify: 
     ad-client: 
     ad-slot: 
   bing-verify: 
-  github: #username
+  github: pdbradley
   stackoverflow: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
+  linkedin: bradleyphilip
   xing: #username
   instagram: #username
   lastfm: #username
