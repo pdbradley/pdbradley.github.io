@@ -73,7 +73,7 @@ class QuickfixFormatter
 end
 {% endhighlight %}
 
-What's going on this is class?  You need to **register** the notification that your custom formatter supports (we are only customizing *example_failed* notifications), and then you write a custom method for that type of notification.  Our custom example_failed method adds a notification to output that consists of the location of the failed example, plus the the associated message.
+What's going on this is class?  You need to **register** the notification that your custom formatter supports (we are only customizing *example_failed* notifications), and then you write a custom method for that type of notification.  Our custom example_failed method adds a notification to output that consists of the location of the failed example, plus the associated message.
 
 Because I don't want to copy this file into all of my rails projects, I keep it in my ~/code/rspec_support/ folder so all my projects can refer to it.
 
@@ -116,6 +116,8 @@ So in closing:
 1. Create a little rspec formatter class.  Copy mine from [github](https://github.com/pdbradley/rspec_support) if you want.  Save it somewhere convenient.
 2. If you have a shortcut to run your rspec tests (surely you do; if not, why not?) modify it to require the rspec formatter code, use it, and direct its output to a file (quickfix.out is what I use)
 3. In your vimrc create a shortcut to open that file as a quickfix file and use it to navigate to your test failures.
+
+If you have a better way to do this, or a better way to format the quickfix output, let me know.  I'm always ready to level up.
 
 [vim-session]: http://318ce10a4aff81d8fd77-9942159f0cde80bd1f0d981f1d813960.r48.cf1.rackcdn.com/mac-mini/Clipboard%20Image%2010-23-15,%201.52.54%20PM.png
 
