@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Better Rspec errors with Vim formatting and quickfix
+title: Better Rspec errors with Quickfix formatting and Vim
 excerpt: "Jump straight to your rspec error locations from Vim using this nifty trick with the quickfix window"
 tags: [sample post, code, highlighting]
 modified: 2014-09-14
