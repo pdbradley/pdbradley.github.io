@@ -73,7 +73,7 @@ class QuickfixFormatter
 end
 {% endhighlight %}
 
-What's going on this is class?  You need to **register** the notification that your custom formatter supports (we are only customizing *example_failed* notifications), and then you write a custom method for that type of notification.  Our custom example_failed method adds a notification to output that consists of the location of the failed example, plus the associated message.
+What's going on in this class?  You need to **register** the notification that your custom formatter supports (we are only customizing *example_failed* notifications), and then you write a custom method for that type of notification.  Our custom example_failed method adds a notification to @output that consists of the location of the failed example, plus the associated message.
 
 Because I don't want to copy this file into all of my rails projects, I keep it in my ~/code/rspec_support/ folder so all my projects can refer to it.
 
