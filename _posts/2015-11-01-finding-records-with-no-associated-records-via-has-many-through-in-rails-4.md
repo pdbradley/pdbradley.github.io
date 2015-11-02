@@ -33,13 +33,13 @@ Student.includes(:class_sessions).where(class_sessions: {id: nil})
 
 When you use "includes" activerecord will use LEFT OUTER JOIN to include whatever associations you are asking for.  In the result set, if associated records exist in the related tables, their values will will be included.  If the associated record(s) don't exist, the values for columns on the included association will be nil.
 
-Which means if you check those associated columns for nil, you are essentially checking that the association is absent for that row.  Hence
+Which means if you check those associated columns for nil, you are essentially checking that the association is absent for that row.  Hence,
 
 {% highlight ruby %}
 Student.includes(:class_sessions).where(class_sessions: {id: nil})
 {% endhighlight %}
 
-Will, by checking for the absence class_sessions.id column,  give you all the students without an associated class session.
+Will, by checking for the absence of the class_sessions.id column, give you all the students without an associated class session.
 
 What's nice is that this applies to indirect associations via has_many through.  Consider this arrangement where a student has class sessions through a join table called enrollments:
 
@@ -116,4 +116,6 @@ The SQL that Activerecord generates is pretty gnarly but the Ruby/Rails is simpl
 {% highlight ruby %}
 SELECT "students"."id" AS t0_r0, "students"."name" AS t0_r1, "students"."created_at" AS t0_r2, "students"."updated_at" AS t0_r3, "teachers"."id" AS t1_r0, "teachers"."name" AS t1_r1, "teachers"."created_at" AS t1_r2, "teachers"."updated_at" AS t1_r3 FROM "students" LEFT OUTER JOIN "enrollments" ON "enrollments"."student_id" = "students"."id" LEFT OUTER JOIN "class_sessions" ON "class_sessions"."id" = "enrollments"."class_session_id" LEFT OUTER JOIN "timeslots" ON "timeslots"."class_session_id" = "class_sessions"."id" LEFT OUTER JOIN "teachers" ON "teachers"."id" = "timeslots"."teacher_id" WHERE "teachers"."id" IS NULL
 {% endhighlight %}
+
+Yep so that's one way to look for unassociated primary records.  If anyone has a better way or thinks I've said something stupid, let me know!  I'm always ready to level up.
 
