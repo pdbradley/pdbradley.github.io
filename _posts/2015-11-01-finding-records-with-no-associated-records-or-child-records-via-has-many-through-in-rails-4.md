@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Finding records with no associated records via has_many :through in Rails 4
+title: Finding records with no associated records (where child association does not exist) via has_many :through in Rails 4
 excerpt: "A pretty simple way to find records that have no associated records"
 tags: [ruby, activerecord, rails]
 modified: 2015-11-01
