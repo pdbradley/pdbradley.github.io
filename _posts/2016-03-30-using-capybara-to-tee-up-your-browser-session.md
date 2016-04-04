@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using Capybara to Tee Up an Interactive Browser Session Quickly
-excerpt: "A pretty simple way to find records that have no associated records"
+excerpt: "Capybara can automate some of the repetitive setup for actual click and type testing that you want to do"
 tags: [ruby, capybara, rails, rspec]
 comments: true
 ---
