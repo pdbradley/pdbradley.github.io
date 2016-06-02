@@ -9,7 +9,7 @@ tags:
   - meaningless
   - tags
 comments: true
-published: false
+published: true
 image:
   feature: sample-image-5.jpg
   credit: WeGraphics
