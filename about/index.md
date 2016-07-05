@@ -7,8 +7,7 @@ comments: false
 share: false
 ---
 
-* I'm a Ruby developer in Atlanta, Georgia.
+* I'm a Ruby / Javascript developer in Atlanta, Georgia.
 * Presently employed at [Bibles for America](http://bfa.org)
-
-
+* Codementor at [The Firehose Project](http://www.thefirehoseproject.com/)
 
